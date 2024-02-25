@@ -19,13 +19,13 @@ jobs:
         dotnet-version: 8.0.x
 
     - name: Restore dependencies for TemaProject1
-      run: dotnet restore ./TemaProject/TemaProject.csproj
+      run: dotnet restore ./TemaProject1/TemaProject1.csproj
 
     - name: Restore dependencies for TestProject
       run: dotnet restore ./TestProject/TestProject.csproj
 
     - name: Build TemaProject1
-      run: dotnet build ./TemaProject/TemaProject.csproj --no-restore
+      run: dotnet build ./TemaProject1/TemaProject1.csproj --no-restore
 
     - name: Build TestProject
       run: dotnet build ./TestProject/TestProject.csproj --no-restore
