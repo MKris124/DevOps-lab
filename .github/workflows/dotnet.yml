@@ -15,11 +15,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    
     - uses: actions/checkout@v3
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: 6.0.x
+    - name: Build TemaProject
+      run: dotnet build ./TemaProject/TemaProject.csproj --no-restore
+    - name: Build TestProject
+      run: dotnet build ./TestProject/TestProject.csproj --no-restore
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
