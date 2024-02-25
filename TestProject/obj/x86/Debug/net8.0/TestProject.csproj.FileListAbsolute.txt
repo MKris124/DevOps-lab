@@ -87,9 +87,6 @@ E:\Témalab\TestProject\bin\x86\Debug\net8.0\zh-Hans\Microsoft.VisualStudio.Test
 E:\Témalab\TestProject\bin\x86\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 E:\Témalab\TestProject\bin\x86\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 E:\Témalab\TestProject\bin\x86\Debug\net8.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-E:\Témalab\TestProject\bin\x86\Debug\net8.0\TemaProject.exe
-E:\Témalab\TestProject\bin\x86\Debug\net8.0\TemaProject.pdb
-E:\Témalab\TestProject\bin\x86\Debug\net8.0\TemaProject.exe.config
 E:\Témalab\TestProject\obj\x86\Debug\net8.0\TestProject.csproj.AssemblyReference.cache
 E:\Témalab\TestProject\obj\x86\Debug\net8.0\TestProject.GeneratedMSBuildEditorConfig.editorconfig
 E:\Témalab\TestProject\obj\x86\Debug\net8.0\TestProject.AssemblyInfoInputs.cache
@@ -102,3 +99,9 @@ E:\Témalab\TestProject\obj\x86\Debug\net8.0\refint\TestProject.dll
 E:\Témalab\TestProject\obj\x86\Debug\net8.0\TestProject.pdb
 E:\Témalab\TestProject\obj\x86\Debug\net8.0\TestProject.genruntimeconfig.cache
 E:\Témalab\TestProject\obj\x86\Debug\net8.0\ref\TestProject.dll
+E:\Témalab\TestProject\bin\x86\Debug\net8.0\CoverletSourceRootsMapping_TestProject
+E:\Témalab\TestProject\bin\x86\Debug\net8.0\TemaProject1.deps.json
+E:\Témalab\TestProject\bin\x86\Debug\net8.0\TemaProject1.runtimeconfig.json
+E:\Témalab\TestProject\bin\x86\Debug\net8.0\TemaProject1.exe
+E:\Témalab\TestProject\bin\x86\Debug\net8.0\TemaProject1.dll
+E:\Témalab\TestProject\bin\x86\Debug\net8.0\TemaProject1.pdb

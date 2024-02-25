@@ -1,0 +1,15 @@
+E:\Témalab\TemaProject1\bin\Debug\net8.0\TemaProject1.exe
+E:\Témalab\TemaProject1\bin\Debug\net8.0\TemaProject1.deps.json
+E:\Témalab\TemaProject1\bin\Debug\net8.0\TemaProject1.runtimeconfig.json
+E:\Témalab\TemaProject1\bin\Debug\net8.0\TemaProject1.dll
+E:\Témalab\TemaProject1\bin\Debug\net8.0\TemaProject1.pdb
+E:\Témalab\TemaProject1\obj\Debug\net8.0\TemaProject1.GeneratedMSBuildEditorConfig.editorconfig
+E:\Témalab\TemaProject1\obj\Debug\net8.0\TemaProject1.AssemblyInfoInputs.cache
+E:\Témalab\TemaProject1\obj\Debug\net8.0\TemaProject1.AssemblyInfo.cs
+E:\Témalab\TemaProject1\obj\Debug\net8.0\TemaProject1.csproj.CoreCompileInputs.cache
+E:\Témalab\TemaProject1\obj\Debug\net8.0\TemaProject1.sourcelink.json
+E:\Témalab\TemaProject1\obj\Debug\net8.0\TemaProject1.dll
+E:\Témalab\TemaProject1\obj\Debug\net8.0\refint\TemaProject1.dll
+E:\Témalab\TemaProject1\obj\Debug\net8.0\TemaProject1.pdb
+E:\Témalab\TemaProject1\obj\Debug\net8.0\TemaProject1.genruntimeconfig.cache
+E:\Témalab\TemaProject1\obj\Debug\net8.0\ref\TemaProject1.dll

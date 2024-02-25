@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TemaProject\TemaProject.csproj" />
+    <ProjectReference Include="..\TemaProject1\TemaProject1.csproj" />
   </ItemGroup>
 
   <ItemGroup>
