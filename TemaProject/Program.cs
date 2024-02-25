@@ -17,17 +17,18 @@ namespace TemaProject
             Console.WriteLine($"Original: {sampleText}");
             Console.WriteLine($"First Character Trimmed: {firstTrimmed}");
             Console.WriteLine($"Last Character Trimmed: {lastTrimmed}");
+            Console.ReadKey();
         }
 
-        static string TrimFirstCharacter(string input)
+        public static string TrimFirstCharacter(string input)
         {
             return string.Join(" ", input.Split(' ').Select(word => word.Substring(1)));
         }
 
-        static string TrimLastCharacter(string input)
+        public static string TrimLastCharacter(string input)
         {
             return string.Join(" ", input.Split(' ').Select(word => word.Substring(0, word.Length - 1)));
         }
     }
-    }
+    
 }

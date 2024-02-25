@@ -1,0 +1,7 @@
+E:\Témalab\TemaProject\bin\x86\Debug\TemaProject.exe.config
+E:\Témalab\TemaProject\bin\x86\Debug\TemaProject.exe
+E:\Témalab\TemaProject\bin\x86\Debug\TemaProject.pdb
+E:\Témalab\TemaProject\obj\x86\Debug\TemaProject.csproj.AssemblyReference.cache
+E:\Témalab\TemaProject\obj\x86\Debug\TemaProject.csproj.CoreCompileInputs.cache
+E:\Témalab\TemaProject\obj\x86\Debug\TemaProject.exe
+E:\Témalab\TemaProject\obj\x86\Debug\TemaProject.pdb
