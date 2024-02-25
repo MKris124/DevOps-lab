@@ -1,33 +1,34 @@
-# This workflow will build a .NET project
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
-
 name: .NET
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ main ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ main ]
 
 jobs:
-  build:
-
+  build-and-test:
     runs-on: ubuntu-latest
 
     steps:
-    
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v2
+
     - name: Setup .NET
-      uses: actions/setup-dotnet@v3
+      uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 6.0.x
+
+    - name: Restore dependencies for TemaProject
+      run: dotnet restore ./TemaProject/TemaProject.csproj
+
+    - name: Restore dependencies for TestProject
+      run: dotnet restore ./TestProject/TestProject.csproj
+
     - name: Build TemaProject
       run: dotnet build ./TemaProject/TemaProject.csproj --no-restore
+
     - name: Build TestProject
       run: dotnet build ./TestProject/TestProject.csproj --no-restore
-    - name: Restore dependencies
-      run: dotnet restore
-    - name: Build
-      run: dotnet build --no-restore
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
+
+    - name: Test TestProject
+      run: dotnet test ./TestProject/TestProject.csproj --no-build --verbosity normal
