@@ -33,29 +33,17 @@ jobs:
     - name: Test TestProject
       run: dotnet test ./TestProject/TestProject.csproj --no-build --verbosity normal
     
-  create-and-merge-pr:
+  auto-merge:
     needs: build-and-test
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/dev' && success()
     steps:
-      - name: Create Pull Request
-        id: create-pr
-        uses: peter-evans/create-pull-request@v6
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: "Automated changes from dev"
-          title: "Automated PR from Dev to Main"
-          body: "This is an automated pull request to update the main branch with the latest changes from dev."
-          base: "main"
-          branch: "update-main-from-dev-${{ github.run_id }}"
-          labels: "auto-merge"
-      
       - name: Auto Merge
-        if: steps.create-pr.outputs.pull-request-number
         uses: pascalgn/automerge-action@v0.14.3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_ACTOR: ${{ github.actor }}
         with:
           mergeMethod: merge
-          pullRequestLabels: "auto-merge"
+          commitMessage: "Automated changes from dev"
           pullRequestLabels: "automerge"
