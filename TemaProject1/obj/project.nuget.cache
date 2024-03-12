@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "O0eST+RakEOAB1HupgeDl9lJOF52DZUMp/38Sq+iU9JtlwmlgLK4LT7YSmFqdI/ndD1pYLW6fvuU0Jb3iHjI3g==",
+  "dgSpecHash": "4r0vxYKnz/KxSogbZrWGiLHlqbFH/leCU3TGAvsELmQjEJ92dD47rhm0+Q19co47rykXHT7p1VFwMQdCxvcNWA==",
   "success": true,
-  "projectFilePath": "E:\\Témalab\\TemaProject1\\TemaProject1.csproj",
+  "projectFilePath": "/home/runner/work/DevOps-lab/DevOps-lab/TemaProject1/TemaProject1.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
