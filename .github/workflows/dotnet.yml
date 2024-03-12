@@ -37,8 +37,8 @@ jobs:
     
     - name: Create Pull Request
       if: success()
-      uses: "pascalgn/automerge-action@v0.16.2"
-      env:
+      uses: reitermarkus/automerge@v2.8.0
+      with:
         GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
         commit-message: "Automated changes from dev"
         title: "Merge changes from dev to main"
