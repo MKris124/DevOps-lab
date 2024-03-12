@@ -1,10 +1,8 @@
-name: .NET
+name: .NET CI/CD Workflow
 
 on:
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+    branches: [ dev ]
 
 jobs:
   build-and-test:
@@ -16,19 +14,29 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 8.0.x
+        dotnet-version: '8.0.x'
 
-    - name: Restore dependencies for TemaProject1
-      run: dotnet restore ./TemaProject1/TemaProject1.csproj
+    - name: Restore dependencies
+      run: |
+        dotnet restore ./TemaProject1/TemaProject1.csproj
+        dotnet restore ./TestProject/TestProject.csproj
 
-    - name: Restore dependencies for TestProject
-      run: dotnet restore ./TestProject/TestProject.csproj
+    - name: Build projects
+      run: |
+        dotnet build ./TemaProject1/TemaProject1.csproj --no-restore
+        dotnet build ./TestProject/TestProject.csproj --no-restore
 
-    - name: Build TemaProject1
-      run: dotnet build ./TemaProject1/TemaProject1.csproj --no-restore
-
-    - name: Build TestProject
-      run: dotnet build ./TestProject/TestProject.csproj --no-restore
-
-    - name: Test TestProject
+    - name: Run tests
       run: dotnet test ./TestProject/TestProject.csproj --no-build --verbosity normal
+
+    - name: Create Pull Request
+      if: success()
+      uses: peter-evans/create-pull-request@v4
+      with:
+        token: ${{ secrets.MY_GITHUB_TOKEN }}
+        commit-message: "Automated changes from dev"
+        title: "Automatikus PR: Dev -> Main"
+        body: "Ez egy automatikusan generált pull request a `dev` branch változásainak a `main` branch-be való merge-eléséhez."
+        base: "main"  
+        branch: "dev"  
+        delete-branch: false 
