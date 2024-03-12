@@ -33,15 +33,17 @@ jobs:
     - name: Test TestProject
       run: dotnet test ./TestProject/TestProject.csproj --no-build --verbosity normal
     
-    - uses: actions/checkout@v4
-    
-    - name: Create Pull Request
-      if: success()
-      uses: reitermarkus/automerge@v2.8.0
-      with:
-        GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-        commit-message: "Automated changes from dev"
-        title: "Merge changes from dev to main"
-        body: "This is an automated pull request to merge changes from the dev branch to the main branch."
-        base: "main" 
-        branch: "dev-to-main-merge" 
+  auto-merge:
+    needs: build-and-test
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/dev' && success()
+    steps:
+      - name: Auto Merge
+        uses: pascalgn/automerge-action@v0.14.3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_ACTOR: ${{ github.actor }}
+        with:
+          mergeMethod: merge
+          commitMessage: "Automated changes from dev"
+          pullRequestLabels: "automerge"
