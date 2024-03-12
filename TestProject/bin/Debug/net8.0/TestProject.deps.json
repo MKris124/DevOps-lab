@@ -9,7 +9,7 @@
       "TestProject/1.0.0": {
         "dependencies": {
           "Microsoft.NET.Test.Sdk": "17.8.0",
-          "TemaProject": "1.0.0",
+          "TemaProject1": "1.0.0",
           "coverlet.collector": "6.0.0",
           "xunit": "2.5.3",
           "xunit.runner.visualstudio": "2.5.3"
@@ -974,7 +974,7 @@
         "runtime": {
           "lib/netstandard2.0/xunit.abstractions.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.0.0.0"
+            "fileVersion": "0.0.0.0"
           }
         }
       },
@@ -1021,9 +1021,9 @@
         }
       },
       "xunit.runner.visualstudio/2.5.3": {},
-      "TemaProject/1.0.0": {
+      "TemaProject1/1.0.0": {
         "runtime": {
-          "TemaProject.exe": {}
+          "TemaProject1.dll": {}
         }
       }
     }
@@ -1657,7 +1657,7 @@
       "path": "xunit.runner.visualstudio/2.5.3",
       "hashPath": "xunit.runner.visualstudio.2.5.3.nupkg.sha512"
     },
-    "TemaProject/1.0.0": {
+    "TemaProject1/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Témalab\\TestProject\\TestProject.csproj": {}
+    "/home/runner/work/DevOps-lab/DevOps-lab/TestProject/TestProject.csproj": {}
   },
   "projects": {
-    "E:\\Témalab\\TemaProject1\\TemaProject1.csproj": {
+    "/home/runner/work/DevOps-lab/DevOps-lab/TemaProject1/TemaProject1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Témalab\\TemaProject1\\TemaProject1.csproj",
+        "projectUniqueName": "/home/runner/work/DevOps-lab/DevOps-lab/TemaProject1/TemaProject1.csproj",
         "projectName": "TemaProject1",
-        "projectPath": "E:\\Témalab\\TemaProject1\\TemaProject1.csproj",
-        "packagesPath": "C:\\Users\\krist\\.nuget\\packages\\",
-        "outputPath": "E:\\Témalab\\TemaProject1\\obj\\",
+        "projectPath": "/home/runner/work/DevOps-lab/DevOps-lab/TemaProject1/TemaProject1.csproj",
+        "packagesPath": "/home/runner/.nuget/packages/",
+        "outputPath": "/home/runner/work/DevOps-lab/DevOps-lab/TemaProject1/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\krist\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/runner/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -60,36 +58,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/runner/.dotnet/sdk/8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Témalab\\TestProject\\TestProject.csproj": {
+    "/home/runner/work/DevOps-lab/DevOps-lab/TestProject/TestProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Témalab\\TestProject\\TestProject.csproj",
+        "projectUniqueName": "/home/runner/work/DevOps-lab/DevOps-lab/TestProject/TestProject.csproj",
         "projectName": "TestProject",
-        "projectPath": "E:\\Témalab\\TestProject\\TestProject.csproj",
-        "packagesPath": "C:\\Users\\krist\\.nuget\\packages\\",
-        "outputPath": "E:\\Témalab\\TestProject\\obj\\",
+        "projectPath": "/home/runner/work/DevOps-lab/DevOps-lab/TestProject/TestProject.csproj",
+        "packagesPath": "/home/runner/.nuget/packages/",
+        "outputPath": "/home/runner/work/DevOps-lab/DevOps-lab/TestProject/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\krist\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/runner/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\Témalab\\TemaProject1\\TemaProject1.csproj": {
-                "projectPath": "E:\\Témalab\\TemaProject1\\TemaProject1.csproj"
+              "/home/runner/work/DevOps-lab/DevOps-lab/TemaProject1/TemaProject1.csproj": {
+                "projectPath": "/home/runner/work/DevOps-lab/DevOps-lab/TemaProject1/TemaProject1.csproj"
               }
             }
           }
@@ -142,7 +138,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/runner/.dotnet/sdk/8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
