@@ -33,7 +33,7 @@ jobs:
       if: success()
       uses: peter-evans/create-pull-request@v4
       with:
-        token: ${{ secrets.MY_GITHUB_TOKEN }}
+        token: ${{secrets.MY_PERSONAL_TOKEN}}
         commit-message: "Automated changes from dev"
         title: "Automatikus PR: Dev -> Main"
         body: "Ez egy automatikusan generált pull request a `dev` branch változásainak a `main` branch-be való merge-eléséhez."
