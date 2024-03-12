@@ -32,18 +32,3 @@ jobs:
 
     - name: Test TestProject
       run: dotnet test ./TestProject/TestProject.csproj --no-build --verbosity normal
-    
-  auto-merge:
-    needs: build-and-test
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/dev' && success()
-    steps:
-      - name: Auto Merge
-        uses: pascalgn/automerge-action@v0.14.3
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_ACTOR: ${{ github.actor }}
-        with:
-          mergeMethod: merge
-          commitMessage: "Automated changes from dev"
-          pullRequestLabels: "automerge"
