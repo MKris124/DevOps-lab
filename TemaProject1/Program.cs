@@ -17,7 +17,7 @@ namespace TemaProject1
             string reversed = ReverseWordsOrder(sampleText);
             string replaced = ReplaceCharacter(sampleText, 'l', 'x');
 
-            Console.WriteLine($"Original: test8 {sampleText}");
+            Console.WriteLine($"Original: test9 {sampleText}");
             Console.WriteLine($"First Character Trimmed: {firstTrimmed}");
             Console.WriteLine($"Last Character Trimmed: {lastTrimmed}");
             Console.WriteLine($"Uppercase: {uppercase}");
